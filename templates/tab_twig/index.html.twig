@@ -1,0 +1,32 @@
+<!doctype html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href=" {{asset('node_modules/bootstrap/dist/css/bootstrap.css')}}">
+    <title>Document</title>
+</head>
+<br>
+</br>
+
+<table class="table">
+{% for cle in tab %}
+<tr>
+    <td>{{cle}} </td>
+</tr>
+{%endfor%}
+</table>
+<div class="alert alert-info">
+nbr elemnts : {{tab|length}}
+<br>
+nbr elemnts : {{length}}
+
+min: {{min(tab)}}
+</br>
+max: {{max(tab)}}
+</div>
+
+</body>
+</html>

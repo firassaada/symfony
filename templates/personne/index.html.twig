@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PersonneController!{% endblock %}
+
+
+
+{% block body %}
+    <div class="rom">
+    {% for prsn in persons %}
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{prsn.firstname}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Who Am I</h6>
+                <p class="card-text">{{ prsn.name}}...{{prsn.age}} </p>
+                <a href="#" class="card-link">ToDo</a>
+            </div>
+        </div>
+    {%endfor%}
+    </div>
+{% endblock %}
